@@ -24,7 +24,7 @@ app.use(cors());
 var con=mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"pass",
+    password:"",
     database:"book_db"
 });
 

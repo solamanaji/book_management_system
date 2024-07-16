@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box{
+            height: 50%;
+            width:  50%;
+            background: rgb(135, 135, 100);
+            margin: auto;
+           
+        }
+        h2{
+            text-align: center;
+        }
+        .field{
+            width: 40%;
+        }
+        .inputs{
+            font-size: 18px;
+        }
+        .head{
+            margin-left: 100px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="head">
+        <a href="http://localhost:8000/"><button><b><---</b></button></a>
+    </div>
+    <div class="box">
+    <h2>New Book Creation</h2>
+    <form action="http://localhost:8000/create" method="post">
+        <label  class="inputs">Enter the book title:</label>
+        <input type="text" name="book_title" class="field" required><br><br>
+        <label  class="inputs">Description:</label>
+        <input type="text" name="description" class="field" required><br><br>
+        <label  class="inputs">Author name:</label>
+        <input type="text" name="author_name" class="field" required><br><br>
+        <label  class="inputs">Price:</label>
+        <input type="text" name="price" class="field" required><br><br>
+        &nbsp; &nbsp; &nbsp;
+        <button type="submit" id="submit"> submit</button>
+
+        
+        
+    </form>
+</div>
+
+
+</body>
+</html>

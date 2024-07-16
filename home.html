@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: auto;
+            height: 50px;
+            background: yellowgreen;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            margin: 0;
+        }
+        .left{
+            width: 50%;
+            height: 300px;
+            float: left;
+            margin-top: 50px;
+            
+            
+        }
+        .right{
+            width: 50%;
+            height: 300px;
+            float: right;
+            
+            margin-top: 50px;
+        }
+        #name{
+            font-size:20px;
+            padding-left: 10px;
+        }
+        #add{
+            width: 50px;
+            height: 30px;
+        }
+        .main{
+            width: 800px;
+            height: 400px;
+            background: skyblue;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+            <div class="header">
+                <h1>BOOK MANAGEMENT SYSTEM</h1>
+            </div>
+            <div class="left">
+                <br>
+              <label id="name"><b>NEW BOOK ADDITION</b></label>&nbsp;&nbsp;
+              <a href="http://localhost:8000/create"><button id="ad">ADD</button></a><br><br><br><br>
+              <label id="name"><b>BOOK DELETION</b></label>&nbsp;&nbsp;
+              <form action="http://localhost:8000/singledel" method="post">
+                <br><label >Enter the book name:</label>
+                <input type="text" name="id" required>
+                <button type="submit" id="del" name="del">delete</button>
+            </form>
+              
+
+
+            </div>
+            <div class="right">
+                <br><label for="" id="name"><b>SHOW ALL BOOKS</b></label>&nbsp;&nbsp;
+                <a href="http://localhost:8000/books"><button id="all" >Show</button></a><br><br><br><br>
+                
+                <label for="" id="name"><b>SHOW A BOOK</b></label>&nbsp;&nbsp;
+                <form action="http://localhost:8000/single" method="post">
+                    <br><label for="">Enter the book name:</label>
+                    <input type="text" name="id" required>
+                    <button type="submit" id="show" name="show">show</button>
+                </form>
+                
+                
+                
+    </div>
+    
+   
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+   
+</body>
+</html>
